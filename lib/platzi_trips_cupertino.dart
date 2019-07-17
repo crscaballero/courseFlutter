@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'home_trips.dart';
-import 'search_trips.dart';
-import 'profile_trips.dart';
+import 'package:platzi_tripss_app/Place/ui/screens/home_trips.dart';
+import 'package:platzi_tripss_app/Place/ui/screens/search_trips.dart';
+import 'package:platzi_tripss_app/User/ui/screens/profile_trips.dart';
 
 class PlatziTripsCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return Scaffold(
       bottomNavigationBar: CupertinoTabScaffold(
         tabBar: CupertinoTabBar(
@@ -43,7 +44,9 @@ class PlatziTripsCupertino extends StatelessWidget {
                 builder: (BuildContext context) => ProfileTrips(),
               );
               break;
+
           }
+
         },
       ),
     );
